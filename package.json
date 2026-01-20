@@ -35,8 +35,10 @@
   },
   "scripts": {
     "prepare": "is-ci || husky install",
+    "preinstall": "yarn remove-pds-sqlite-pre",
     "postinstall": "patch-package && yarn intl:compile-if-needed && yarn remove-pds-sqlite",
     "remove-pds-sqlite": "rm -rf node_modules/@atproto/pds/node_modules/better-sqlite3 || true",
+    "remove-pds-sqlite-pre": "rm -rf node_modules/@atproto/pds/node_modules/better-sqlite3 || true",
     "prebuild": "EXPO_NO_GIT_STATUS=1 expo prebuild --clean",
     "android": "expo run:android",
     "android:prod": "expo run:android --variant release",
