@@ -1,12 +1,12 @@
-# Bluesky Social App
+# RedSky Social App
 
-Welcome friends! This is the codebase for the Bluesky Social app.
+Welcome friends! This is the codebase for the RedSky Social app.
 
 Get the app itself:
 
-- **Web: [bsky.app](https://bsky.app)**
-- **iOS: [App Store](https://apps.apple.com/us/app/bluesky-social/id6444370199)**
-- **Android: [Play Store](https://play.google.com/store/apps/details?id=xyz.blueskyweb.app)**
+- **Web: [redsky.app](https://redsky.app)**
+- **iOS: [App Store](https://apps.apple.com/us/app/redsky-social/id6444370199)**
+- **Android: [Play Store](https://play.google.com/store/apps/details?id=xyz.redskyweb.app)**
 
 ## Development Resources
 
