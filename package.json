@@ -8,6 +8,18 @@
   "optionalDependencies": {
     "better-sqlite3": "*"
   },
+  "resolutions": {
+    "@react-native/babel-preset": "0.81.5",
+    "@react-native/normalize-colors": "0.81.5",
+    "**/@expo/image-utils": "0.8.7",
+    "**/@react-native-async-storage/async-storage": "2.2.0",
+    "**/expo-constants": "18.0.8",
+    "**/expo-device": "7.1.4",
+    "**/multiformats": "9.9.0",
+    "unicode-segmenter": "0.14.5",
+    "@types/estree": "1.0.6",
+    "**/better-sqlite3": "*"
+  },
   "packageManager": "yarn@1.22.22",
   "expo": {
     "autolinking": {
@@ -23,7 +35,10 @@
   },
   "scripts": {
     "prepare": "is-ci || husky install",
-    "postinstall": "patch-package && yarn intl:compile-if-needed",
+    "preinstall": "yarn remove-pds-sqlite-pre",
+    "postinstall": "patch-package && yarn intl:compile-if-needed && yarn remove-pds-sqlite",
+    "remove-pds-sqlite": "rm -rf node_modules/@atproto/pds/node_modules/better-sqlite3 || true",
+    "remove-pds-sqlite-pre": "rm -rf node_modules/@atproto/pds/node_modules/better-sqlite3 || true",
     "prebuild": "EXPO_NO_GIT_STATUS=1 expo prebuild --clean",
     "android": "expo run:android",
     "android:prod": "expo run:android --variant release",
