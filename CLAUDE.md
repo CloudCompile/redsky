@@ -1,10 +1,10 @@
-# CLAUDE.md - Bluesky Social App Development Guide
+# CLAUDE.md - RedSky Social App Development Guide
 
-This document provides guidance for working effectively in the Bluesky Social app codebase.
+This document provides guidance for working effectively in the RedSky Social app codebase.
 
 ## Project Overview
 
-Bluesky Social is a cross-platform social media application built with React Native and Expo. It runs on iOS, Android, and Web, connecting to the AT Protocol (atproto) decentralized social network.
+RedSky Social is a cross-platform social media application built with React Native and Expo. It runs on iOS, Android, and Web, connecting to the AT Protocol (atproto) decentralized social network.
 
 **Tech Stack:**
 - React Native 0.81 with Expo 54
