@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "yarn build-web",
-  "outputDirectory": "dist",
+  "buildCommand": "yarn intl:compile && yarn build-web",
+  "outputDirectory": "web-build",
   "installCommand": "yarn install",
   "framework": null,
   "rewrites": [
