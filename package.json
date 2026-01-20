@@ -3,7 +3,7 @@
   "version": "1.115.0",
   "private": true,
   "engines": {
-    "node": ">=20"
+    "node": "20.x"
   },
   "optionalDependencies": {
     "better-sqlite3": "*"
