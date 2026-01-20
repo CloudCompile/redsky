@@ -17,8 +17,7 @@
     "**/expo-device": "7.1.4",
     "**/multiformats": "9.9.0",
     "unicode-segmenter": "0.14.5",
-    "@types/estree": "1.0.6",
-    "**/better-sqlite3": "*"
+    "@types/estree": "1.0.6"
   },
   "packageManager": "yarn@1.22.22",
   "expo": {
@@ -35,7 +34,7 @@
   },
   "scripts": {
     "prepare": "is-ci || husky install",
-    "postinstall": "patch-package && yarn intl:compile-if-needed && yarn remove-pds-sqlite",
+    "postinstall": "patch-package && yarn intl:compile-if-needed",
     "remove-pds-sqlite": "rm -rf node_modules/@atproto/pds/node_modules/better-sqlite3 || true",
     "remove-pds-sqlite-pre": "rm -rf node_modules/@atproto/pds/node_modules/better-sqlite3 || true",
     "prebuild": "EXPO_NO_GIT_STATUS=1 expo prebuild --clean",
