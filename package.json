@@ -5,6 +5,9 @@
   "engines": {
     "node": ">=20"
   },
+  "optionalDependencies": {
+    "better-sqlite3": "*"
+  },
   "packageManager": "yarn@1.22.22",
   "expo": {
     "autolinking": {
